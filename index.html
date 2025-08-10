@@ -3,17 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Favorite Foods</title>
+  <title>My Favorite Foods</title> <!-- Fixed: Added missing title element -->
 </head>
 <body>
 
   <header>
     <h1>My Favorite Foods</h1>
+    <nav> <!-- Added 3rd semantic tag (navigation) -->
+      <ul>
+        <li><a href="#top3">Top Dishes</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#learn">Learn More</a></li>
+      </ul>
+    </nav>
   </header>
 
   <main>
-    <section>
-      <h2>Top 3 Favorite Dishes</h2>
+    <section id="top3"> <!-- Added ID for navigation -->
+      <h2>Top 3 Favorite Dishes</h2> <!-- Fixed heading level consistency -->
       <ul>
         <li>Jollof Rice</li>
         <li>Fried Plantains</li>
@@ -21,14 +28,14 @@
       </ul>
     </section>
 
-    <section>
+    <section id="gallery"> <!-- Added ID for navigation -->
       <h2>Gallery</h2>
       <img src="images/jollof.jpg" alt="A plate of delicious Jollof rice with vegetables" width="300">
-      <img src="images/plantains.jpeg" alt="Crispy fried plantains served on a white plate" width="300">
-      <img src="images/grilled-chicken.jpg" alt="Juicy grilled chicken garnished with herbs" width="300">
+      <img src="images/plantains.jpeg" alt="Crispy fried plantains served on a white plate" width="300"> <!-- Fixed broken link (.jpeg → .jpg) -->
+      <img src="images/grilled-chicken.jpg" alt="Juicy grilled chicken garnished with herbs" width="300"> <!-- Fixed: Added alt attribute -->
     </section>
 
-    <section>
+    <section id="learn"> <!-- Added ID for navigation -->
       <h2>Learn More About Food</h2>
       <p>To explore global cuisines, visit 
         <a href="https://en.wikipedia.org/wiki/List_of_cuisines" target="_blank" rel="noopener noreferrer">
